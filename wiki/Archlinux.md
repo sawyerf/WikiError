@@ -9,3 +9,8 @@ error: you need to load the kernel first
 ```
 Solution:
 - https://forum.manjaro.org/t/howto-rescue-your-system-error-hook-invalid-value-path/123226
+
+## Discord
+### Discord dosn't detect microphone
+Solution:
+- Install pulse
