@@ -14,3 +14,10 @@ Solution:
 ### Discord dosn't detect microphone
 Solution:
 - Install pulse
+
+## Youtube-dl
+### Broken .part (`moov atom not found`)
+Solution:
+```
+untrunc working_file.mp4 broken_file.mp4.part
+```
