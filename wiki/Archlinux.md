@@ -21,3 +21,14 @@ Solution:
 ```
 untrunc working_file.mp4 broken_file.mp4.part
 ```
+
+## Xorg
+### Change display setting with command
+Solution:
+```
+$ nvidia-settings -q CurrentMetaMode
+
+Attribute 'CurrentMetaMode' (hostnmae:0.0): id=50, switchable=no, source=nv-control :: DPY-1: 2880x1620 @2880x1620 +0+0 {ViewPortIn=2880x1620, ViewPortOut=2880x1620+0+0}
+```
+Save everything after the :: to the end of the attribute (in this case: DPY-1: 2880x1620 @2880x1620 +0+0 {ViewPortIn=2880x1620, ViewPortOut=2880x1620+0+0}) and use to reconfigure your displays with `nvidia-settings --assign "CurrentMetaMode=your_meta_mode"`.
+[source](https://wiki.archlinux.org/index.php/NVIDIA#Using_nvidia-settings)
