@@ -52,3 +52,6 @@ Edit `/etc/systemd/logind.conf` and reboot:
 ```
 HandleLidSwitch=ignore
 ```
+
+### Create a Bootable USB for Windows
+Use **Woeusb**
