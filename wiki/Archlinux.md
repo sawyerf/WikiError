@@ -32,3 +32,20 @@ Attribute 'CurrentMetaMode' (hostnmae:0.0): id=50, switchable=no, source=nv-cont
 ```
 Save everything after the :: to the end of the attribute (in this case: DPY-1: 2880x1620 @2880x1620 +0+0 {ViewPortIn=2880x1620, ViewPortOut=2880x1620+0+0}) and use to reconfigure your displays with `nvidia-settings --assign "CurrentMetaMode=your_meta_mode"`.
 [source](https://wiki.archlinux.org/index.php/NVIDIA#Using_nvidia-settings)
+
+### General
+### Mount a Partition at boot
+Get UUID with the command:
+```
+sudo blkid
+```
+Edit the file `/etc/fstab` and add:
+```
+UUID=<UUID>                      <Path>        <System File>   defaults,noatime 0 0
+```
+
+### Suspend when close the laptop
+Edit `/etc/systemd/logind.conf` and reboot:
+```
+HandleLidSwitch=ignore
+```
