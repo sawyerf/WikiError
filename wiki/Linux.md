@@ -1,4 +1,4 @@
-# Archlinux
+# Linux
 
 ## Grub
 ### vmlinuz not found after update (2020/02/22)
@@ -62,4 +62,12 @@ Disable ipv6
 ```
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+```
+
+## Locale
+### Unsupported locale setting
+Edit `/etc/locale.gen` and uncomment a line
+and execute:
+```
+locale-gen
 ```
