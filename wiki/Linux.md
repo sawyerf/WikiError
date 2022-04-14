@@ -8,10 +8,25 @@ error: file `/boot/vmlinuz-5.2-x86_64` not found
 error: you need to load the kernel first
 ```
 Solution:
-```
+```bash
 sudo mkinitcpio -P
 ```
 - Source: https://forum.manjaro.org/t/howto-rescue-your-system-error-hook-invalid-value-path/123226
+
+### Change default boot
+1. Backup `/etc/default/grub`:
+```bash
+sudo cp /etc/default/grub /etc/default/grub.bak
+```
+2. Edit Variable `GRUB_DEFAULT` in `/etc/default/grub`: 
+```bash
+GRUB_DEFAULT=0
+```
+3. Update Grub
+```bash
+sudo update-grub
+```
+- Source: https://linuxhint.com/change-grub-options/
 
 ## Discord
 ### Discord dosn't detect microphone
