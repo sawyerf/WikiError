@@ -1,5 +1,7 @@
 # Vim
 
+- [Python Syntax](#python-syntax)
+
 ## Python Syntax
 ### Change tab for real tab
 Solutions:

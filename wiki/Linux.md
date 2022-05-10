@@ -1,5 +1,14 @@
 # Linux
 
+- [Discord](#discord)
+- [Grub](#grub)
+- [Git](#git)
+- [General](#general)
+- [Locale](#locale)
+- [Python](#python)
+- [Xorg](#xorg)
+- [Youtube-dl](#youtube-dl)
+
 ## Grub
 ### vmlinuz not found after update (2020/02/22)
 Error Message:
@@ -51,7 +60,7 @@ Attribute 'CurrentMetaMode' (hostnmae:0.0): id=50, switchable=no, source=nv-cont
 Save everything after the :: to the end of the attribute (in this case: DPY-1: 2880x1620 @2880x1620 +0+0 {ViewPortIn=2880x1620, ViewPortOut=2880x1620+0+0}) and use to reconfigure your displays with `nvidia-settings --assign "CurrentMetaMode=your_meta_mode"`.
 [source](https://wiki.archlinux.org/index.php/NVIDIA#Using_nvidia-settings)
 
-### General
+## General
 ### Mount a Partition at boot
 Get UUID with the command:
 ```

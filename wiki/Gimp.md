@@ -1,5 +1,7 @@
 # Gimp
 
+- [Gimp](#gimp)
+
 ## Fonts
 ### Add fonts (2020/02/22)
 Solutions:
