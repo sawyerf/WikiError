@@ -86,3 +86,13 @@ and execute:
 ```
 locale-gen
 ```
+
+## Git
+### Edit commit author
+#### Last commit
+```
+git commit --amend --author="Sawyerf <sawyer.flink@protonmail.ch>"
+```
+
+Source:
+- https://www.git-tower.com/learn/git/faq/change-author-name-email/
