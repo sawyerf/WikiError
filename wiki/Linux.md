@@ -105,3 +105,9 @@ git commit --amend --author="Sawyerf <sawyer.flink@protonmail.ch>"
 
 Source:
 - https://www.git-tower.com/learn/git/faq/change-author-name-email/
+
+# Dualboot
+## Date problem
+```bash
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+```
