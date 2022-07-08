@@ -83,7 +83,7 @@ Use **Woeusb**
 ## Python
 ### Slow PIP3
 Disable ipv6
-```
+```bash
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 ```
@@ -92,19 +92,24 @@ sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 ### Unsupported locale setting
 Edit `/etc/locale.gen` and uncomment a line
 and execute:
-```
+```bash
 locale-gen
 ```
 
 ## Git
 ### Edit commit author
 #### Last commit
-```
+```bash
 git commit --amend --author="Sawyerf <sawyer.flink@protonmail.ch>"
 ```
 
 Source:
 - https://www.git-tower.com/learn/git/faq/change-author-name-email/
+
+### Use Specific Private Key
+```bash
+GIT_SSH_COMMAND="ssh -i ~/lol " git
+```
 
 # Dualboot
 ## Date problem
